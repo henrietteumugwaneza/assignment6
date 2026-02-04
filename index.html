@@ -10,6 +10,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,10 +21,10 @@
 <header class="navbar">
     <nav>
         <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#home"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i>ABOUT</a></li>
+            <li><a href="#portfolio"><i class="fa fa-th"></i>PORTFOLIO</a></li>
+            <li><a href="#contact"><i class="fa fa-envelope"></i>CONTACT</a></li>
         </ul>
     </nav>
 </header>
@@ -87,21 +88,67 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="content">
-    <h2>Contact Me</h2>
-    <p><i class="fa-solid fa-location-dot"></i> Kigali, Rwanda</p>
-    <p><i class="fa-solid fa-envelope"></i> example@email.com</p>
+    <div class="contact-section">
 
-    <!-- Google Map -->
-    <iframe 
-        src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed"
-        loading="lazy">
-    </iframe>
+  <h3 class="section-title">WHERE I WORK</h3>
+  <p class="section-subtitle"><em>I'd love your feedback!</em></p>
+
+  <div class="contact-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="contact-image">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Location">
+    </div>
+
+    <!-- RIGHT INFO + FORM -->
+    <div class="contact-info">
+      <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+      <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+
+      <p class="coffee-text">
+        Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:
+      </p>
+
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+
+        <input type="text" placeholder="Message" required>
+
+        <button type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+
+  </div>
+</div>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 Parallax Website Clone</p>
+<!-- FOOTER -->
+<footer class="footer">
+
+  <a href="#home" class="to-top">
+    <i class="fa fa-arrow-up"></i> To the top
+  </a>
+
+  <div class="social-icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-snapchat"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+
+  <p class="powered">
+    Powered by <a href="https://www.w3schools.com/w3css/">w3.css</a>
+  </p>
+
 </footer>
 
 </body>

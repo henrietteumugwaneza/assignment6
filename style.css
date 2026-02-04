@@ -66,14 +66,98 @@ body {
 }
 
 /* ================= CONTENT ================= */
-.content {
-    padding: 80px 10%;
-    text-align: center;
+
+.contact-section {
+  background: white;
+  padding: 80px 12%;
 }
 
-.content h2 {
-    margin-bottom: 20px;
+.section-title {
+  text-align: center;
+  letter-spacing: 5px;
+  color: #777;
 }
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #777;
+}
+
+/* FLEX LAYOUT */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* IMAGE */
+.contact-image img {
+  width: 300px;
+  border-radius: 4px;
+}
+
+/* INFO */
+.contact-info p {
+  margin: 10px 0;
+  color: #777;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.coffee-text {
+  margin: 20px 0;
+}
+
+/* FORM */
+form {
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image img {
+    width: 100%;
+  }
+
+  button {
+    float: none;
+    width: 100%;
+  }
+}
+
 
 /* ================= TABLE ================= */
 table {
@@ -112,12 +196,61 @@ iframe {
 }
 
 /* ================= FOOTER ================= */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
+/* FOOTER (W3Schools style) */
+.footer {
+  background: #6f6f6f;
+  color: white;
+  text-align: center;
+  padding: 64px 16px;
 }
+
+/* TO TOP BUTTON */
+.to-top {
+  display: inline-block;
+  background: #f1f1f1;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.to-top i {
+  margin-right: 8px;
+}
+
+.to-top:hover {
+  background: #ccc;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons i {
+  margin: 0 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  opacity: 0.6;
+}
+
+/* POWERED TEXT */
+.powered {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.powered a {
+  color: white;
+}
+
+.powered a:hover {
+  color: #ddd;
+}
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
